@@ -41,16 +41,6 @@ class CreateDepthMaskNYU:
             return image
 
     def save_dm(self, image, image_path):
-        # fig = plt.figure(figsize=(2.24, 2.24))
-        # ax = plt.Axes(fig, [0., 0., 1., 1.])
-        # ax.set_axis_off()
-        # fig.add_axes(ax)
-        # ax.imshow(image, aspect='equal')
-        # plt.savefig(image_path, dpi=100)
-        # ax.cla()
-        # plt.cla()
-        # plt.close(fig)
-
         fig = plt.figure(figsize=(2.24, 2.24))
         ax = plt.Axes(fig, [0., 0., 1., 1.])
         ax.set_axis_off()
@@ -59,4 +49,15 @@ class CreateDepthMaskNYU:
         plt.savefig(image_path, dpi=100)
         ax.cla()
         ax.clear()
-        # plt.close(fig)
+        plt.close(fig)
+
+    def save_dm_160(self, image, image_path):
+        fig = plt.figure(figsize=(1.60, 1.60))
+        ax = plt.Axes(fig, [0., 0., 1., 1.])
+        ax.set_axis_off()
+        fig.add_axes(ax)
+        ax.imshow(image, aspect='equal')
+        plt.savefig(image_path, dpi=80)
+        ax.cla()
+        ax.clear()
+        plt.close(fig)
