@@ -57,7 +57,7 @@ class CreateDepthMaskNYU:
         ax.set_axis_off()
         fig.add_axes(ax)
         ax.imshow(image, aspect='equal')
-        plt.savefig(image_path, dpi=80)
+        plt.savefig(image_path, dpi=100)
         ax.cla()
         ax.clear()
         plt.close(fig)
