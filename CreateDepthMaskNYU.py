@@ -52,3 +52,4 @@ class CreateDepthMaskNYU:
         plt.savefig(image_path, dpi=112)
         ax.cla()
         plt.cla()
+        plt.close(fig)
