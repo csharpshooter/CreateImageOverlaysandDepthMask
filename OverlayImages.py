@@ -20,12 +20,13 @@ fg_mask_path = r'/media/abhijit/DATA/Development/TSAI/EVA/MaskRCNN Dataset/Foreg
 final_output = r'/media/abhijit/DATA/Development/TSAI/EVA/MaskRCNN Dataset/OverLayedImages'
 final_output_mask = r'/media/abhijit/DATA/Development/TSAI/EVA/MaskRCNN Dataset/OverLayedMask'
 final_output_dm = r'/media/abhijit/DATA/Development/TSAI/EVA/MaskRCNN Dataset/OverLayedDepthMasks'
-final_output_dm_ext = '.jpg'
+
 
 fg_image_ext = '.png'
 fg_image_flip_ext = '_flip.png'
 bg_image_ext = '.jpg'
 final_image_ext = '.jpg'
+final_output_dm_ext = '.jpg'
 batch_images_count = 40000
 batch = 1
 batch_folder_name = 'batch_'
