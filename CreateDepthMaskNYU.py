@@ -2,7 +2,7 @@ import glob
 import os
 
 import matplotlib.pyplot as plt
-
+from PIL import Image
 import NYU
 from NYU import BilinearUpSampling2D, predict, scale_up, display_images, load_images
 
@@ -56,5 +56,7 @@ class CreateDepthMaskNYU:
         ax.set_axis_off()
         fig.add_axes(ax)
         ax.imshow(image, aspect='equal')
-        plt.savefig(image_path, dpi=80)
-        plt.close(fig)
+        plt.savefig(image_path, dpi=100)
+        ax.cla()
+        ax.clear()
+        # plt.close(fig)
