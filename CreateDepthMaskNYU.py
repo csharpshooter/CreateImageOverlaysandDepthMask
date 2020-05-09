@@ -2,7 +2,7 @@ import glob
 import os
 
 import matplotlib.pyplot as plt
-from PIL import Image
+
 import NYU
 from NYU import BilinearUpSampling2D, predict, scale_up, display_images, load_images
 
